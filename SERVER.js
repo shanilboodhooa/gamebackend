@@ -8,7 +8,7 @@ const server = http.createServer(app);  // Create an HTTP server with the Expres
 const io = socketio(server, {
     cors: {//do this to avoid cors error
 
-        origin: ["http://127.0.0.1:5500"],
+        origin: ["https://xotic-tac-toeox.netlify.app/"],
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true
